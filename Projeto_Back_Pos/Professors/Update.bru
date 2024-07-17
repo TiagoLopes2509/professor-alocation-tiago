@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{Host}}/professors/3
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+      "name": "Tarcisio Meira",
+      "cpf": "36985201478",
+      "departmentId": 6
+  }
+}

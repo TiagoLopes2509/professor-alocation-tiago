@@ -1,0 +1,30 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{Host}}/allocations
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "day": "TUESDAY",
+    "professor": {
+      "id": 1
+    },
+    "course": {
+      "id":4 
+    },
+    "start": "22:03:54",
+    "end": "23:03:54"
+  }
+}

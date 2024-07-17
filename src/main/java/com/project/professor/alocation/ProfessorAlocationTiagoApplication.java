@@ -8,6 +8,7 @@ public class ProfessorAlocationTiagoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProfessorAlocationTiagoApplication.class, args);
+		System.out.println("*** Started Backend ***");
 	}
 
 }
